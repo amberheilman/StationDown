@@ -1,64 +1,64 @@
 Engine,Ladder,Location
-43,9,2108-14 Market Street
-8,2,101-15 North 4th Street
-11,,601-09 South Street
-20,23,133 North 10th street
-1,5,711-23 South Broad Street
-22,31,3270 Comly Road
-46,,9197 Frankford Avenue
-62,34,9845 Bustleton Avenue
-58,,812 Hendrix Street
-9,21,6900 Germantown Avenue
-19,8,300 E Chelten Avenue
-37,,101 W Highland Avenue
-35,25,4208-52 Ridge Avenue
-6,16,2601 Belgrade Street
-7,10,3798 Kensington Ave
-25,,2931 Boudinot Street
-28,,2520 E. Ontario Street
-33,,4750 Richmond Street
-70,,4800 Langdon Street
-38,,4960 Longshore Avenue
-14,15,1652-54 Foulkroad Street
-64,,6000 Rising Sun Avenue
-71,28,1900 Cottman Avenue
-56,,832 Rhawn St
-52,,4501 Van Kirk St
-36,20,7818 Frankford Avenu
-18,,8205 Roosevelt Blvd
-50,12,1325 W Cambria Street
-55,22,4000 N Front Street
-59,18,2207 W Hunting Park Avenue
-2,3,2426-32 N 2nd Street
-13,1,1541-47 Parrish Street
-27,,1901-15 Oxford Street
-29,,400-08 W Girard Avenue
-34,,1301-07 N 28th Street
-45,14,2401 N. 26th Street
-51,29,5931 Old York Road
-61,,5334 Rising Sun Avenue
-63,,1210 Oak Lane Avenue
-72,,1127-29 W. Louden St
-73,,7515 Ogontz Avenue
-12,,4447 Main Street
-39,30,6630 Ridge Avenue
-66,,7720 Ridge Avenue
-3,,200-10 Washington Avenue
-10,11,1357 South 12th Street
-24,,1200 S. 20th Street
-47,,3023-45 Grays Ferry Avenue
-49,,2600 S. 13th Street
-53,27,414-16 Snyder Avenu
-60,19,2301 S. 24th Street
-MU1,,Delaware and Washington Avenue
-MU2,,Passyunk Ave and Schuylkill River
-40,4,6438 Woodland Avenue
-69,,8201 Tinicum Avenue
-68,13,801 S. 52nd Street
-78,,Philadelphia International Airport
-5,6,4221-29 Market Street
-16,,1517-19 Belmont Avenue
-41,24,1201 N 61st street
-44,,3420 Haverford Avenue
-54,,1913 N 63rd Street
-57,,5559 Chestnut Street
+E43,L9,2108-14 Market Street  Philadelphia  PA
+E8,L2,101-15 North 4th Street  Philadelphia  PA
+E11,,601-09 South Street  Philadelphia  PA
+E20,L23,133 North 10th street  Philadelphia  PA
+E1,L5,711-23 South Broad Street  Philadelphia  PA
+E22,L31,3270 Comly Road  Philadelphia  PA
+E46,,9197 Frankford Avenue  Philadelphia  PA
+E62,L34,9845 Bustleton Avenue  Philadelphia  PA
+E58,,812 Hendrix Street  Philadelphia  PA
+E9,L21,6900 Germantown Avenue  Philadelphia  PA
+E19,L8,300 E Chelten Avenue  Philadelphia  PA
+E37,,101 W Highland Avenue  Philadelphia  PA
+E35,L25,4208-52 Ridge Avenue  Philadelphia  PA
+E6,L16,2601 Belgrade Street  Philadelphia  PA
+E7,L10,3798 Kensington Ave  Philadelphia  PA
+E25,,2931 Boudinot Street  Philadelphia  PA
+E28,,2520 E. Ontario Street  Philadelphia  PA
+E33,,4750 Richmond Street  Philadelphia  PA
+E70,,4800 Langdon Street  Philadelphia  PA
+E38,,4960 Longshore Avenue  Philadelphia  PA
+E14,L15,1652-54 Foulkroad Street  Philadelphia  PA
+E64,,6000 Rising Sun Avenue  Philadelphia  PA
+E71,L28,1900 Cottman Avenue  Philadelphia  PA
+E56,,832 Rhawn St  Philadelphia  PA
+E52,,4501 Van Kirk St  Philadelphia  PA
+E36,L20,7818 Frankford Avenu  Philadelphia  PA
+E18,,8205 Roosevelt Blvd  Philadelphia  PA
+E50,L12,1325 W Cambria Street  Philadelphia  PA
+E55,L22,4000 N Front Street  Philadelphia  PA
+E59,L18,2207 W Hunting Park Avenue  Philadelphia  PA
+E2,L3,2426-32 N 2nd Street  Philadelphia  PA
+E13,L1,1541-47 Parrish Street  Philadelphia  PA
+E27,,1901-15 Oxford Street  Philadelphia  PA
+E29,,400-08 W Girard Avenue  Philadelphia  PA
+E34,,1301-07 N 28th Street  Philadelphia  PA
+E45,L14,2401 N. 26th Street  Philadelphia  PA
+E51,L29,5931 Old York Road  Philadelphia  PA
+E61,,5334 Rising Sun Avenue  Philadelphia  PA
+E63,,1210 Oak Lane Avenue  Philadelphia  PA
+E72,,1127-29 W. Louden St  Philadelphia  PA
+E73,,7515 Ogontz Avenue  Philadelphia  PA
+E12,,4447 Main Street  Philadelphia  PA
+E39,L30,6630 Ridge Avenue  Philadelphia  PA
+E66,,7720 Ridge Avenue  Philadelphia  PA
+E3,,200-10 Washington Avenue  Philadelphia  PA
+E10,L11,1357 South 12th Street  Philadelphia  PA
+E24,,1200 S. 20th Street  Philadelphia  PA
+E47,,3023-45 Grays Ferry Avenue  Philadelphia  PA
+E49,,2600 S. 13th Street  Philadelphia  PA
+E53,L27,414-16 Snyder Avenu  Philadelphia  PA
+E60,L19,2301 S. 24th Street  Philadelphia  PA
+MU1,,Delaware and Washington Avenue  Philadelphia  PA
+MU2,,Passyunk Ave and Schuylkill River  Philadelphia  PA
+E40,L4,6438 Woodland Avenue  Philadelphia  PA
+E69,,8201 Tinicum Avenue  Philadelphia  PA
+E68,L13,801 S. 52nd Street  Philadelphia  PA
+E78,,Philadelphia International Airport  Philadelphia  PA
+E5,L6,4221-29 Market Street  Philadelphia  PA
+E16,,1517-19 Belmont Avenue  Philadelphia  PA
+E41,L24,1201 N 61st street  Philadelphia  PA
+E44,,3420 Haverford Avenue  Philadelphia  PA
+E54,,1913 N 63rd Street  Philadelphia  PA
+E57,,5559 Chestnut Street  Philadelphia  PA
