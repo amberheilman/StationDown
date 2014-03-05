@@ -109,4 +109,5 @@ class PhillyFireNewsParser
   end
 end
 
-# ap result
+p = PhillyFireNewsParser.new
+p.all_pages_to_csv!
