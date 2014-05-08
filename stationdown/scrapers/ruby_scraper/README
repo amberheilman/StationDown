@@ -1,0 +1,10 @@
+
+How to run the scaper tool
+
+1) Install Ruby
+
+2) Install bundler
+
+3) Run 'bundle install'
+
+4) Run 'ruby scraper.rb'
