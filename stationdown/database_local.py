@@ -6,7 +6,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'stationdown_dev',                      
         'USER': 'stationdown_dev',
-        'PASSWORD': 'Z46AT@#8lSF66kw',
+        'PASSWORD': '',
         'HOST': 'spruce.phl.io'
     }
 }
