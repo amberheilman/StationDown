@@ -34,12 +34,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    #'django.contrib.admin',
+    ##'django.contrib.auth',
+    #'django.contrib.contenttypes',
+    #'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'stationdown',
+    'stationdown.firenews',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -56,15 +58,7 @@ ROOT_URLCONF = 'stationdown.urls'
 WSGI_APPLICATION = 'stationdown.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -94,9 +88,7 @@ STATICFILES_DIRS = (
 
 STATIC_URL = '/static/'
 
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -109,6 +101,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+DATA_DIR = os.path.join(BASE_DIR,'../data')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
@@ -117,3 +110,9 @@ STATICFILES_DIRS = (
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
+
+JSMILEY_VAR = 'yoooo!'
+
+
+
+from stationdown.database_local import *
