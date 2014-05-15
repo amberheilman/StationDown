@@ -31,17 +31,17 @@ class FireIncidentManager(models.Manager):
 
 	def create_feed_entry( self, dataList ):
 		feedEntry = FireIncident()
-		feedEntry.postTitle = str(dataList.title)
-		feedEntry.postLink  = str(dataList.link)
-		feedEntry.postDate  = str(dataList.published )
+		feedEntry.postTitle = dataList.title.encode( 'utf-8','replace' )
+		feedEntry.postLink  = dataList.link.encode( 'utf-8','replace' )
+		feedEntry.postDate  = dataList.published.encode( 'utf-8','replace' )
 		
 		contentObj = PostContentHtml( dataList.content )
 		
-		feedEntry.fireDate = str(contentObj.fireDate)
-		feedEntry.fireTime = str(contentObj.fireTime)
-		feedEntry.fireAddress = str(contentObj.fireAddress)
-		feedEntry.fireType = str(contentObj.fireType)
-		feedEntry.fireDetails = str(contentObj.fireDetails)
+		feedEntry.fireDate = contentObj.fireDate.encode( 'utf-8','replace' )
+		feedEntry.fireTime = contentObj.fireTime.encode( 'utf-8','replace' )
+		feedEntry.fireAddress = contentObj.fireAddress.encode( 'utf-8','replace' )
+		feedEntry.fireType = contentObj.fireType.encode( 'utf-8','replace' )
+		feedEntry.fireDetails = contentObj.fireDetails.encode( 'utf-8','replace' )
 
 		return feedEntry
 		
