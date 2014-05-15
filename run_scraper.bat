@@ -1,1 +1,0 @@
-python manage.py stationdown\firenews\scrape.py
