@@ -8,6 +8,9 @@ class Geocoder:
 	googleGeocoder = None
 
 	def geocode(self, addressStr):
+		
+		if addressStr is None:
+			raise Exception( 'addressStr may not be None' )
 
 		return self.googleGeocode( addressStr )
 
@@ -31,6 +34,10 @@ class Geocoder:
 	# take addressStr and return an address string that has the best chance of geocoding
 	@staticmethod
 	def scrubAddress( addressStr ):
+		
+		if addressStr is None:
+			raise Exception( 'addressStr may not be None' )
+			
 		testAddress = Geocoder.stripLinks( addressStr )
 		testAddress = Geocoder.stripBlockOf( testAddress )
 		testAddress += ", Philadelphia PA"

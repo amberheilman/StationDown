@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     #'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.gis',
     'stationdown',
     'stationdown.firenews',
 )
@@ -116,3 +117,5 @@ JSMILEY_VAR = 'yoooo!'
 
 
 from stationdown.database_local import *
+
+POSTGIS_VERSION = '2.1.1'

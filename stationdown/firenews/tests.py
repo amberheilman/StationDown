@@ -2,6 +2,12 @@ from django.test import TestCase
 
 from stationdown.firenews.geocoder import *
 
+class FeedTests(TestCase):
+	
+	def test_create_fire_incident(self):
+		
+		fireIncident = FeedEntry()
+		
 class GeocoderTests(TestCase):
 
 	def test_stripLinks(self):
