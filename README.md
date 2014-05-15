@@ -10,8 +10,11 @@ In the future, the trip of the responding station will be calculated and compare
 Brown out: "It is when you take an engine or ladder company out of service temporarily and re-distribute the staff for either training or to fill in personnel gaps in other companies." -http://www.phila.gov/fire/pdfs/Brown-Out_FAQ.pdf
 
 
-Scraping Fire Locations from Philly Fire News
-=========================
+### Scraping Fire Locations from Philly Fire News
+
+
+[The firenews app under stationdown handles interacting with the Philly Fire News website to pull down fire incidents](stationdown/firenews/README.md)
+
 Run the command 'python manage.py scrape'
 
 Fusion Table of Fire Stations:
