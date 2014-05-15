@@ -30,6 +30,8 @@ class FireNewsFeed:
 
 	# for debugging, set to True and the class will retreive only the first
 	# page and try to store those entries
+	justOnePage = False
+
 	def save(self):
 		incidents = self.fetchPages()
 
