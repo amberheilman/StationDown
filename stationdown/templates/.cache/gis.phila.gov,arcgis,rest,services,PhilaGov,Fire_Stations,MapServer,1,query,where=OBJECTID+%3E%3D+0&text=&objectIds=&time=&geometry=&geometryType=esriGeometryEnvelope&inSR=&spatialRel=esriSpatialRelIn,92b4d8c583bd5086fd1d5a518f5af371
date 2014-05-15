@@ -1,0 +1,1364 @@
+status: 200
+content-location: http://gis.phila.gov/arcgis/rest/services/PhilaGov/Fire_Stations/MapServer/1/query?where=OBJECTID+%3E%3D+0&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=OBJECTID%2C+FIRESTA_%2C+ENG%2C+LAD%2C+BC%2C+MED%2C+SPCL%2C+SPCL3%2C+SPCL3%2C+LOCATION%2C+RAD%2C+ACTIVE%2C+SHAPE&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=pjson
+set-cookie: BIGipServergis_prod_map_center_pool=3005262016.49175.0000; path=/
+vary: Accept-Encoding
+server: 
+etag: 723d5762
+cache-control: max-age=0,must-revalidate
+date: Fri, 02 May 2014 00:14:46 GMT
+content-type: text/plain;charset=utf-8
+-varied-accept-encoding: gzip, deflate
+
+{
+ "displayFieldName": "MED",
+ "fieldAliases": {
+  "OBJECTID": "OBJECTID",
+  "FIRESTA_": "FIRESTA_",
+  "ENG": "ENG",
+  "LAD": "LAD",
+  "BC": "BC",
+  "MED": "MED",
+  "SPCL": "SPCL",
+  "SPCL3": "SPCL3",
+  "SPCL3": "SPCL3",
+  "LOCATION": "LOCATION",
+  "RAD": "RAD",
+  "ACTIVE": "ACTIVE"
+ },
+ "geometryType": "esriGeometryPoint",
+ "spatialReference": {
+  "wkid": 102729,
+  "latestWkid": 2272
+ },
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID"
+  },
+  {
+   "name": "FIRESTA_",
+   "type": "esriFieldTypeInteger",
+   "alias": "FIRESTA_"
+  },
+  {
+   "name": "ENG",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "ENG"
+  },
+  {
+   "name": "LAD",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "LAD"
+  },
+  {
+   "name": "BC",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "BC"
+  },
+  {
+   "name": "MED",
+   "type": "esriFieldTypeString",
+   "alias": "MED",
+   "length": 3
+  },
+  {
+   "name": "SPCL",
+   "type": "esriFieldTypeString",
+   "alias": "SPCL",
+   "length": 5
+  },
+  {
+   "name": "SPCL3",
+   "type": "esriFieldTypeString",
+   "alias": "SPCL3",
+   "length": 5
+  },
+  {
+   "name": "SPCL3",
+   "type": "esriFieldTypeString",
+   "alias": "SPCL3",
+   "length": 5
+  },
+  {
+   "name": "LOCATION",
+   "type": "esriFieldTypeString",
+   "alias": "LOCATION",
+   "length": 36
+  },
+  {
+   "name": "RAD",
+   "type": "esriFieldTypeString",
+   "alias": "RAD",
+   "length": 1
+  },
+  {
+   "name": "ACTIVE",
+   "type": "esriFieldTypeString",
+   "alias": "ACTIVE",
+   "length": 3
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 1,
+    "FIRESTA_": 45,
+    "ENG": 45,
+    "LAD": 14,
+    "BC": 0,
+    "MED": "25",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 26TH ST & W YORK ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2689992.4375915378,
+    "y": 250513.88353687525
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2,
+    "FIRESTA_": 34,
+    "ENG": 34,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "36",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 28TH ST & W THOMPSON ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2688328.5465909988,
+    "y": 244652.30833175778
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3,
+    "FIRESTA_": 49,
+    "ENG": 49,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "11",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 13TH ST & SHUNK ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2692298.163885057,
+    "y": 223481.74607299268
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 4,
+    "FIRESTA_": 54,
+    "ENG": 54,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "41B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 63RD ST & LANCASTER AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2669815.1663024575,
+    "y": 247216.19870559871
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 5,
+    "FIRESTA_": 66,
+    "ENG": 66,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RIDGE AVE & SHAWMONT AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2672030.264216736,
+    "y": 271910.13131177425
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 6,
+    "FIRESTA_": 37,
+    "ENG": 37,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "W HIGHLAND AVE & SHAWNEE ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2679750.7669847012,
+    "y": 280308.58456838131
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 7,
+    "FIRESTA_": 63,
+    "ENG": 63,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "1210 OAK LN",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2699521.1233377457,
+    "y": 273557.21942649782
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 8,
+    "FIRESTA_": 64,
+    "ENG": 64,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RISING SUN AVE & BENNER ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2710435.3643837869,
+    "y": 270925.17976297438
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 9,
+    "FIRESTA_": 56,
+    "ENG": 56,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "48B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RHAWN ST & VERREE RD",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2716581.2725400478,
+    "y": 280784.89564222097
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 10,
+    "FIRESTA_": 58,
+    "ENG": 58,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "812 HENDRIX ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2732675.7708328664,
+    "y": 297791.73193436861
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 11,
+    "FIRESTA_": 39,
+    "ENG": 0,
+    "LAD": 30,
+    "BC": 0,
+    "MED": "5",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RIDGE AVE & CINNAMINSON ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2675498.2269152403,
+    "y": 267408.46558491886
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 12,
+    "FIRESTA_": 53,
+    "ENG": 53,
+    "LAD": 27,
+    "BC": 0,
+    "MED": "43B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 4TH ST & SNYDER AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2696612.3235293478,
+    "y": 225187.80589130521
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 13,
+    "FIRESTA_": 78,
+    "ENG": 78,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "30",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "2 PIA WAY",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2675019.6481092721,
+    "y": 204434.77597208321
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 14,
+    "FIRESTA_": 41,
+    "ENG": 41,
+    "LAD": 24,
+    "BC": 0,
+    "MED": "23",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 61ST ST & W THOMPSON ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2671719.7664520293,
+    "y": 242329.70369978249
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 15,
+    "FIRESTA_": 35,
+    "ENG": 35,
+    "LAD": 25,
+    "BC": 0,
+    "MED": "16",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RIDGE AVE & MIDVALE AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2684243.9826593995,
+    "y": 256461.43667015433
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 16,
+    "FIRESTA_": 73,
+    "ENG": 73,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "33",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "76TH AVE & OGONTZ AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2694174.5246849209,
+    "y": 278967.66652035713
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 17,
+    "FIRESTA_": 51,
+    "ENG": 51,
+    "LAD": 29,
+    "BC": 2,
+    "MED": "18",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "5931 OLD YORK RD",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2697930.4538514912,
+    "y": 269758.18901781738
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 18,
+    "FIRESTA_": 61,
+    "ENG": 61,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "29",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RISING SUN AVE & E SOMERVILLE AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2705526.0950051844,
+    "y": 265314.32760855556
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 19,
+    "FIRESTA_": 50,
+    "ENG": 50,
+    "LAD": 12,
+    "BC": 8,
+    "MED": "22",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N PARK AVE & W CAMBRIA ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2696138.5693849921,
+    "y": 252482.30141180754
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 20,
+    "FIRESTA_": 15,
+    "ENG": 0,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": "MU-1",
+    "SPCL3": "MA-1",
+    "SPCL3": "MA-1",
+    "LOCATION": "S DELAWARE AVE & WASHINGTON AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2699685.0788148642,
+    "y": 229376.81022520363
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 21,
+    "FIRESTA_": 52,
+    "ENG": 52,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "32",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "JACKSON ST & VAN KIRK ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2720885.0916990638,
+    "y": 260992.55873838067
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 22,
+    "FIRESTA_": 70,
+    "ENG": 70,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "42B",
+    "SPCL": "D2HQ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "FOULKROD ST & LANGDON ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2711035.0340809375,
+    "y": 264473.55351604521
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 23,
+    "FIRESTA_": 36,
+    "ENG": 36,
+    "LAD": 20,
+    "BC": 0,
+    "MED": "17",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "7818 FRANKFORD AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2729665.5325587988,
+    "y": 269400.68412227929
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 24,
+    "FIRESTA_": 62,
+    "ENG": 62,
+    "LAD": 34,
+    "BC": 0,
+    "MED": "6",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "BUSTLETON AVE & BOWLER ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2728753.9385610074,
+    "y": 287745.20162381232
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 25,
+    "FIRESTA_": 46,
+    "ENG": 46,
+    "LAD": 0,
+    "BC": 13,
+    "MED": "49B",
+    "SPCL": "GF-3",
+    "SPCL3": "MA-46",
+    "SPCL3": "MA-46",
+    "LOCATION": "FRANKFORD AVE & LINDEN AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2736812.5604906231,
+    "y": 274593.23460178077
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 26,
+    "FIRESTA_": 47,
+    "ENG": 47,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "40",
+    "SPCL": "D1HQ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "3031 GRAYS FERRY AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2685067.5024747699,
+    "y": 231143.30998905003
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 27,
+    "FIRESTA_": 69,
+    "ENG": 69,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": "GF1",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "8140 BARTRAM AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2673128.0302303582,
+    "y": 214073.22789853811
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 28,
+    "FIRESTA_": 33,
+    "ENG": 33,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "RICHMOND ST & KIRKBRIDE ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2720319.3449061513,
+    "y": 254796.59132428467
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 29,
+    "FIRESTA_": 44,
+    "ENG": 44,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "34",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "3420 HAVERFORD AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2685253.3436826915,
+    "y": 240053.57865059376
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 30,
+    "FIRESTA_": 60,
+    "ENG": 60,
+    "LAD": 19,
+    "BC": 0,
+    "MED": "37",
+    "SPCL": "HAZMT",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 24TH ST & RITNER ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2687387.9840389341,
+    "y": 225282.62421348691
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 31,
+    "FIRESTA_": 29,
+    "ENG": 29,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "15",
+    "SPCL": "R-1",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 4TH ST & W GIRARD AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2698996.2219640017,
+    "y": 242612.39746809006
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 32,
+    "FIRESTA_": 68,
+    "ENG": 68,
+    "LAD": 13,
+    "BC": 7,
+    "MED": " 3",
+    "SPCL": "MD13",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 52ND ST & WILLOWS AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2676366.5982641429,
+    "y": 233310.50992292166
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 33,
+    "FIRESTA_": 55,
+    "ENG": 55,
+    "LAD": 22,
+    "BC": 0,
+    "MED": "39",
+    "SPCL": "MD-22",
+    "SPCL3": "LT",
+    "SPCL3": "LT",
+    "LOCATION": "N FRONT ST & W LUZERNE ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2703115.8877966851,
+    "y": 257804.36111658812
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 34,
+    "FIRESTA_": 38,
+    "ENG": 38,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "KEYSTONE ST & MAGEE AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2725886.223691836,
+    "y": 261819.8954577446
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 35,
+    "FIRESTA_": 43,
+    "ENG": 43,
+    "LAD": 9,
+    "BC": 0,
+    "MED": "7",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "2110 MARKET ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2690134.1779261082,
+    "y": 236466.2740277648
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 36,
+    "FIRESTA_": 57,
+    "ENG": 57,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "9B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 56TH ST & CHESTNUT ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2674016.8820745945,
+    "y": 238216.24510332942
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 37,
+    "FIRESTA_": 72,
+    "ENG": 72,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "24",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "1127 W LOUDEN ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2698429.180256635,
+    "y": 263022.08688573539
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 38,
+    "FIRESTA_": 71,
+    "ENG": 71,
+    "LAD": 28,
+    "BC": 12,
+    "MED": "12",
+    "SPCL": " ",
+    "SPCL3": "SNORK",
+    "SPCL3": "SNORK",
+    "LOCATION": "LORETTO AVE & COTTMAN AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2719294.8159197718,
+    "y": 273121.3238838315
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 39,
+    "FIRESTA_": 40,
+    "ENG": 40,
+    "LAD": 4,
+    "BC": 0,
+    "MED": "19",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 65TH ST & WOODLAND AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2674087.5218266994,
+    "y": 225784.74141742289
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 40,
+    "FIRESTA_": 59,
+    "ENG": 59,
+    "LAD": 18,
+    "BC": 0,
+    "MED": "4B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "W HUNTING PARK AVE & SCHUYLER ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2692555.1048640013,
+    "y": 257525.41673508286
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 41,
+    "FIRESTA_": 1,
+    "ENG": 0,
+    "LAD": 5,
+    "BC": 1,
+    "MED": "35B",
+    "SPCL": " ",
+    "SPCL3": "SNORK",
+    "SPCL3": "SNORK",
+    "LOCATION": "711 S BROAD ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2693092.01837565,
+    "y": 232401.3033695668
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 42,
+    "FIRESTA_": 2,
+    "ENG": 2,
+    "LAD": 3,
+    "BC": 0,
+    "MED": "31",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "2426 N 2ND ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2700894.6385047585,
+    "y": 249141.22953005135
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 43,
+    "FIRESTA_": 3,
+    "ENG": 3,
+    "LAD": 0,
+    "BC": 0,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "E MOYAMENSING AVE & WASHINGTON AVE",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2698113.4794095457,
+    "y": 229385.08653222024
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 44,
+    "FIRESTA_": 5,
+    "ENG": 5,
+    "LAD": 6,
+    "BC": 11,
+    "MED": " 0",
+    "SPCL": " ",
+    "SPCL3": "LT",
+    "SPCL3": "LT",
+    "LOCATION": "N 43RD ST & MARKET ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2681123.6969670802,
+    "y": 237896.08435201645
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 45,
+    "FIRESTA_": 6,
+    "ENG": 0,
+    "LAD": 16,
+    "BC": 0,
+    "MED": "46B",
+    "SPCL": "AU-2",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "BELGRADE ST & E HUNTINGDON ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2705909.8174583614,
+    "y": 246128.72466942668
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 46,
+    "FIRESTA_": 7,
+    "ENG": 7,
+    "LAD": 10,
+    "BC": 10,
+    "MED": "2",
+    "SPCL": "FCOM1",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "KENSINGTON AVE & CASTOR AVE",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2710810.7019989043,
+    "y": 255509.04440066218
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 47,
+    "FIRESTA_": 8,
+    "ENG": 0,
+    "LAD": 2,
+    "BC": 4,
+    "MED": "44B",
+    "SPCL": " ",
+    "SPCL3": "SNORK",
+    "SPCL3": "SNORK",
+    "LOCATION": "N 4TH ST & ARCH ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2698281.7354847193,
+    "y": 236332.44031445682
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 48,
+    "FIRESTA_": 9,
+    "ENG": 9,
+    "LAD": 21,
+    "BC": 0,
+    "MED": "10",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "GERMANTOWN AVE & CARPENTER LN",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2685784.3027835488,
+    "y": 273263.50934487581
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 49,
+    "FIRESTA_": 10,
+    "ENG": 10,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "27",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 12TH ST & REED ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2693673.8785987794,
+    "y": 228949.99754412472
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 50,
+    "FIRESTA_": 11,
+    "ENG": 11,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "21",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 6TH ST & SOUTH ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2696724.8994406462,
+    "y": 232506.12675102055
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 51,
+    "FIRESTA_": 12,
+    "ENG": 12,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "4445 MAIN ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2675131.5814141333,
+    "y": 262699.97566618025
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 52,
+    "FIRESTA_": 13,
+    "ENG": 13,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "50B",
+    "SPCL": "AU-1",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "1541 PARRISH ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2693497.6385762095,
+    "y": 242370.21004143357
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 53,
+    "FIRESTA_": 14,
+    "ENG": 0,
+    "LAD": 15,
+    "BC": 0,
+    "MED": "47B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "FOULKROD ST & DARRAH ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2715850.882150948,
+    "y": 260329.35645599663
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 54,
+    "FIRESTA_": 16,
+    "ENG": 16,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "26",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "BELMONT AVE & VIOLA ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2679473.4284450859,
+    "y": 244599.3066354543
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 55,
+    "FIRESTA_": 18,
+    "ENG": 18,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "38",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "8205 E ROOSEVELT BLVD",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2725970.985081777,
+    "y": 276245.07104244828
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 56,
+    "FIRESTA_": 19,
+    "ENG": 19,
+    "LAD": 8,
+    "BC": 9,
+    "MED": "28",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "E CHELTEN AVE & BAYNTON ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2690452.3280904889,
+    "y": 267551.46616843343
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 57,
+    "FIRESTA_": 20,
+    "ENG": 20,
+    "LAD": 23,
+    "BC": 0,
+    "MED": "1",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 10TH ST & CHERRY ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2695665.2141862363,
+    "y": 237011.28289373219
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 58,
+    "FIRESTA_": 22,
+    "ENG": 22,
+    "LAD": 31,
+    "BC": 0,
+    "MED": "20",
+    "SPCL": "MD-31",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "ACADEMY RD & COMLY RD",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2741992.6761518121,
+    "y": 287746.39235083759
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 59,
+    "FIRESTA_": 24,
+    "ENG": 24,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "14",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "S 20TH ST & FEDERAL ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2689935.7500757575,
+    "y": 230412.2897618711
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 60,
+    "FIRESTA_": 25,
+    "ENG": 25,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "8B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "BOUDINOT ST & HART LN",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2704465.6093536764,
+    "y": 251455.65609976649
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 61,
+    "FIRESTA_": 27,
+    "ENG": 27,
+    "LAD": 0,
+    "BC": 3,
+    "MED": "13",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "N 19TH ST & W OXFORD ST",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2692391.8913598061,
+    "y": 245615.16517825425
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 62,
+    "FIRESTA_": 28,
+    "ENG": 28,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "45B",
+    "SPCL": " ",
+    "SPCL3": " ",
+    "SPCL3": " ",
+    "LOCATION": "BELGRADE ST & E ONTARIO ST",
+    "RAD": "N",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2710900.3645413071,
+    "y": 249973.57849851251
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 63,
+    "FIRESTA_": 32,
+    "ENG": 0,
+    "LAD": 0,
+    "BC": 0,
+    "MED": "0",
+    "SPCL": "MU-2",
+    "SPCL3": "MA2",
+    "SPCL3": "MA2",
+    "LOCATION": "Schuylkill River N. of Passyunk Ave",
+    "RAD": "S",
+    "ACTIVE": " "
+   },
+   "geometry": {
+    "x": 2682735.427873224,
+    "y": 224697.90478488803
+   }
+  }
+ ]
+}

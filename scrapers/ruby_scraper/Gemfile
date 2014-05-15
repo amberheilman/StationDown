@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'rubygems.org'
 
 gem 'nokogiri'
 gem 'awesome_print'
