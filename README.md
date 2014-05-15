@@ -12,10 +12,9 @@ Brown out: "It is when you take an engine or ladder company out of service tempo
 
 ### Scraping Fire Locations from Philly Fire News
 
+The firenews app under stationdown handles interacting with the Philly Fire News website to pull down fire incidents[Read more here](stationdown/firenews/README.md)
 
-[The firenews app under stationdown handles interacting with the Philly Fire News website to pull down fire incidents](stationdown/firenews/README.md)
-
-Run the command 'python manage.py scrape'
+To pull down the fire incidents and save them into postGIS, run: 'python manage.py save'
 
 Fusion Table of Fire Stations:
 https://www.google.com/fusiontables/embedviz?q=select+col3+from+1HY9mXeOfgIZ4GYv5gUaI4zi6xPlafyPrFWA7dwU&viz=MAP&h=false&lat=39.95709485745125&lng=-75.10653457187499&t=1&z=11&l=col3&y=2&tmplt=3&hml=GEOCODABLEG
