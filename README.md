@@ -25,8 +25,10 @@ A fusion table of Philadelphia fire stations is located
 
 ### Download and Install
 
+Station Down is written in Python 2.7.6 with the Django Framework and GeoDjango GIS module.
+
 <pre><code>
-clone https://github.com/amberheilman/StationDown.git
+git clone https://github.com/amberheilman/StationDown.git
 
 cd StationDown
 
