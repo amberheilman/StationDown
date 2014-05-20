@@ -3,3 +3,5 @@ venv
 staticfiles
 activate.bat
 upload.bat
+stationdown/database_local.py
+*~$
