@@ -115,7 +115,7 @@ TEMPLATE_DIRS = (
 JSMILEY_VAR = 'yoooo!'
 
 
-
+# include the database settings
 from stationdown.database_local import *
 
 POSTGIS_VERSION = '2.1.1'
