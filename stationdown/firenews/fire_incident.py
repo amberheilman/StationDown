@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-from stationdown.firenews.models import *
+import re
 #
 # FeedEntry is a container for the information stored in each Philly Fire News post
 #
@@ -7,43 +7,68 @@ class FireIncident(models.Model):
 
 	id = models.AutoField(primary_key=True)
 
-	postTitle = models.CharField(max_length=255)
-	#postLink  = models.CharField(max_length=255)
-	#postDate  = models.CharField(max_length=255)
+	postTitleStr = models.CharField(max_length=255,blank=False)
+	postLinkStr  = models.CharField(max_length=255,blank=False)
+	postDateStr  = models.CharField(max_length=255,blank=False)
 	
-	#fireDate = models.CharField(max_length=255)
-	#fireTime = models.CharField(max_length=255)
-	fireAddress = models.TextField()
-	#fireType = models.CharField(max_length=255)
-	#fireDetails = models.TextField()
+	fireDateStr = models.CharField(max_length=255,blank=False)
+	fireTimeStr = models.CharField(max_length=255)
+	fireAddressRaw = models.TextField()
+	fireAddressStr = models.TextField()
+	fireTypeStr = models.CharField(max_length=255)
+	fireDetailsStr = models.TextField()
 	
 	point = models.PointField()
 		
-	fireDate = None
-	fireTime = None
-	fireAddress = None
-	fireType = None
-	fireDetails = None
+	x = models.FloatField()
+	y = models.FloatField()
 
+	def __str__(self):
+		return "{date}, {address} {x} {y}".format(
+			date=self.fireDateStr, address=self.fireAddressStr, 
+					x=self.point.coords[0], y=self.point.coords[1] )
 
 
 class FireIncidentManager(models.Manager):
 
 	def create_feed_entry( self, dataList ):
 		feedEntry = FireIncident()
-		feedEntry.postTitle = dataList.title.encode( 'utf-8','replace' )
-		feedEntry.postLink  = dataList.link.encode( 'utf-8','replace' )
-		feedEntry.postDate  = dataList.published.encode( 'utf-8','replace' )
+		feedEntry.postTitleStr = dataList.title.encode( 'utf-8','replace' )
+		feedEntry.postLinkStr  = dataList.link.encode( 'utf-8','replace' )
+		feedEntry.postDateStr  = dataList.published.encode( 'utf-8','replace' )
 		
 		contentObj = PostContentHtml( dataList.content )
 		
-		feedEntry.fireDate = contentObj.fireDate.encode( 'utf-8','replace' )
-		feedEntry.fireTime = contentObj.fireTime.encode( 'utf-8','replace' )
-		feedEntry.fireAddress = contentObj.fireAddress.encode( 'utf-8','replace' )
-		feedEntry.fireType = contentObj.fireType.encode( 'utf-8','replace' )
-		feedEntry.fireDetails = contentObj.fireDetails.encode( 'utf-8','replace' )
+		feedEntry.fireDateStr = contentObj.fireDate.encode( 'utf-8','replace' )
+		feedEntry.fireTimeStr = contentObj.fireTime.encode( 'utf-8','replace' )
+		feedEntry.fireAddressRaw = contentObj.fireAddress.encode( 'utf-8','replace' )
+		feedEntry.fireAddressStr = self.scrubAddress( feedEntry.fireAddressRaw )
+		feedEntry.fireTypeStr = contentObj.fireType.encode( 'utf-8','replace' )
+		feedEntry.fireDetailsStr = contentObj.fireDetails.encode( 'utf-8','replace' )
 
 		return feedEntry
+
+	# take addressStr and return an address string that has the best chance of geocoding
+	@staticmethod
+	def scrubAddress( addressStr ):
+		
+		if addressStr is None:
+			raise Exception( 'addressStr may not be None' )
+			
+		testAddress = FireIncidentManager.stripLinks( addressStr )
+		testAddress = FireIncidentManager.stripBlockOf( testAddress )
+
+		return testAddress
+
+	# often times addresses contain " block of ", we're gonna strip that out
+	@staticmethod
+	def stripBlockOf( str ):
+		return re.sub( '\s*block of\s*', ' ', str )
+
+	# philly fire news sometimes has links in the address text	
+	@staticmethod
+	def stripLinks( str ):
+		return re.sub( '<a.*>.*</a>','', str )
 		
 #
 # PostContentHtml is the container and parser for the fire details contained in the wordpress post html
