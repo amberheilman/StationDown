@@ -1,20 +1,10 @@
 #stationdown/firenews/scrape.py
-from lxml import html
-import requests
-import xml.etree.ElementTree as ET
-from django.core.files.base import File
-import os
 
-import feedparser
 from django.core.management.base import NoArgsCommand, BaseCommand, make_option
-from django.contrib.gis.geos import GEOSGeometry
-from django.contrib.gis.geos import Point as GEOSPoint
 
-import stationdown.settings as settings
-from stationdown.firenews.models import *
-from stationdown.firenews.models import *
-import stationdown.firenews.geocoder
-from stationdown.firenews.geocoder import *
+from stationdown.firenews.fireincidentsaver import FireIncidentSaver
+from stationdown.firenews.fireincidentcsv import FireIncidentCSV
+from stationdown.firenews.fire_incident import FireIncident
 
 #
 # set up a command that can be run as 'python manage.py scrape'
@@ -22,7 +12,8 @@ from stationdown.firenews.geocoder import *
 class Command(NoArgsCommand):
 
     option_list = BaseCommand.option_list + (
-        make_option('--save', action='store_true',help='save the fire news entries to the database'),
+        make_option('--save', action='store_true',help='scrape incidents and save them to the database'),
+        make_option('--csv', action='store_true',help='output fire incidents in csv'),
     )
 
     def handle(self, *args, **options):
@@ -30,5 +21,12 @@ class Command(NoArgsCommand):
 
 		if 'save' in options and options['save'] == True:
 
-			feed = FireNewsFeed()
-			feed.save()
+			fireNewsSaver = FireIncidentSaver()
+			fireNewsSaver.save()
+
+		elif 'csv' in options and options['csv'] == True:
+
+			incidents = FireIncident.objects.all()
+			csv = FireIncidentCSV(incidents)
+
+			print csv

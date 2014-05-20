@@ -1,0 +1,2 @@
+import stationdown.firenews.fireincidentsaver
+from stationdown.firenews.fireincidentsaver import FireIncidentSaver
