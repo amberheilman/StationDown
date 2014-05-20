@@ -1,13 +1,31 @@
 <html>
     <head>
         <title>{% block title %}Station Down{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css"/>
-		<script type="text/javascript" src="js/geojson.min.js"></script>
 
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        
+        <!-- stylesheet
+        ---------------------------- -->
+        <link rel="stylesheet" type="text/css" href="/static/style.css"/>
+		
+
+		<script type="text/javascript" src="/static/geojson.min.js"></script>
+		
 		<!-- jQuery
 		----------------------------- -->
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Google Maps
+		---------------------------- -->
+		<script type="text/javascript"
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUyKgIqRsJcdjrmOHDKJSBgyaBwDvfkbw&sensor=true">
+		</script>
+
+
+		<!-- fireopendata
+		---------------------------- -->
+		<script type="text/javascript" src="/static/js/fireopendata.js"></script>
     </head>
     <body>
         {% block content %}{% endblock %}
