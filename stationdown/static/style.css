@@ -9,3 +9,12 @@ html, body {
 	bottom: 0;
 	width: 100%;
 }
+
+.incident-window {
+	width: 200px;
+	height: 200px;
+}
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map-canvas { height: 100% }
