@@ -8,14 +8,19 @@ import csv
 from stationdown.firenews.fire_incident import FireIncident
 from stationdown.firenews.fireincidentcsv import FireIncidentCSV
 
-def fire_incidents(request):
+def fire_home(request):
+	t = get_template('firenews_home.html')
+	html = t.render(Context())
+	return HttpResponse(html)
+
+def show(request):
 
 	format = request.GET.get('format', None)
 	all    = bool( request.GET.get('all', False) )
 
 	# return because we're showing the map html
 	if format is None:
-		t = get_template('fire_incidents.html')
+		t = get_template('show.html')
 		html = t.render(Context())
 		return HttpResponse(html)
 
@@ -36,3 +41,4 @@ def fire_incidents(request):
 		response = HttpResponse( csv, content_type="text/csv" )
 		response['Content-Disposition'] = 'attachment; filename="fire_incidents.csv"'
 		return response
+

@@ -29,7 +29,7 @@ FireIncidentMap.prototype.fetchIncidents = function( options ) {
 	self = this;
 
 	$.ajax({
-		url: '/fire-incidents/?format=json&all='+options.all,
+		url: '/fire-incidents/show?format=json&all='+options.all,
 		success: function( data ) {
 
 			var incidents = [];

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <script type="text/javascript">
+
+      $(document).ready( function() {
+        console.log( "loading fire incidents" );    
+              var map = new FireIncidentMap( document.getElementById('map-canvas'),FireIncidentMap.getMapOptions() );
+        map.fetchIncidents({all:true});
+      }); // end document ready
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"/>
+  </body>
+</html>
+
+{% endblock %}

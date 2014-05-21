@@ -31,27 +31,7 @@ class Geocoder:
 		else:
 			return point
 
-	# take addressStr and return an address string that has the best chance of geocoding
-	@staticmethod
-	def scrubAddress( addressStr ):
-		
-		if addressStr is None:
-			raise Exception( 'addressStr may not be None' )
-			
-		testAddress = Geocoder.stripLinks( addressStr )
-		testAddress = Geocoder.stripBlockOf( testAddress )
-		testAddress += ", Philadelphia PA"
-		return testAddress
 
-	# often times addresses contain " block of ", we're gonna strip that out
-	@staticmethod
-	def stripBlockOf( str ):
-		return re.sub( '\s*block of\s*', ' ', str )
-
-	# philly fire news sometimes has links in the address text	
-	@staticmethod
-	def stripLinks( str ):
-		return re.sub( '<a.*>.*</a>','', str )
 
 class GoogleGeocoder:
 
