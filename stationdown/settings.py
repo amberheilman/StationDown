@@ -115,3 +115,8 @@ JSMILEY_VAR = 'yoooo!'
 from stationdown.database_local import *
 
 POSTGIS_VERSION = '2.1.1'
+
+from os import environ
+
+GEOS_LIBRARY_PATH = environ.get('GEOS_LIBRARY_PATH')
+GDAL_LIBRARY_PATH = environ.get('GDAL_LIBRARY_PATH')
