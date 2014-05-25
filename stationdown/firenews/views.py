@@ -9,11 +9,19 @@ from stationdown.firenews.fire_incident import FireIncident
 from stationdown.firenews.fireincidentcsv import FireIncidentCSV
 
 def fire_home(request):
-	t = get_template('firenews_home.html')
+	t = get_template('fire_home.html')
 	html = t.render(Context())
 	return HttpResponse(html)
 
-def show(request):
+def fire_csv(request):
+	incidents = FireIncident.objects.all()
+	csv = FireIncidentCSV( incidents )
+
+	response = HttpResponse( csv, content_type="text/csv" )
+	response['Content-Disposition'] = 'attachment; filename="fire_incidents.csv"'
+	return response
+
+def fire_show(request):
 
 	format = request.GET.get('format', None)
 	all    = bool( request.GET.get('all', False) )
@@ -34,11 +42,14 @@ def show(request):
 		data = serializers.serialize("json", incidents )
 		return HttpResponse( data, content_type="application/json")
 
-	elif format == 'csv':
+		
 
-		csv = FireIncidentCSV( incidents )
+def fire_list(request):
+	incidents = FireIncident.objects.all()
 
-		response = HttpResponse( csv, content_type="text/csv" )
-		response['Content-Disposition'] = 'attachment; filename="fire_incidents.csv"'
-		return response
+	t = get_template('list.html')
+	html = t.render(Context({"incidents":incidents,"test":"test"}))
+	return HttpResponse(html)
+
+	
 
