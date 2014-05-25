@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<table id="fireTable" class="tablesorter">
+<thead> 
+<tr> 
+    <th>Fire Date</th> 
+    <th>Fire Type</th> 
+    <th>Fire Address</th> 
+    <th>Fire Description</th>
+</tr> 
+</thead> 
+	<tbody>
+{% for incident in incidents %}
+	<tr>
+		
+		<td>{{ incident.fireDateStr|safe }}</td>
+
+		<td>{{ incident.fireTypeStr|safe }}</td>
+
+		<td>{{ incident.fireAddressStr|safe }}</td>
+
+		<td>{{ incident.fireDetailsStr|safe }}</td>
+
+	</tr>
+{% endfor %}
+	</tbody>
+</table>
+
+<script type="text/javascript">
+	$(document).ready(function() 
+	    { 
+	        $("#fireTable").tablesorter(); 
+	    } 
+	); 
+</script>
+{% endblock %}
