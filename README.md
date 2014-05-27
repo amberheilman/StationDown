@@ -13,6 +13,12 @@ Brown out: "It is when you take an engine or ladder company out of service tempo
 
 A list of Philadelphia fire incidents can be found [here](http://stationdown.herokuapp.com/fire-incidents/list)
 
+### Fire Station Brownout Closing Schedule
+
+Here is the repository of PDFs containing the schedule
+
+https://github.com/jimRsmiley/phila-fire-station-brownout-schedule-pdfs
+
 ### Scraping Fire Locations from Philly Fire News
 
 The firenews app under stationdown handles interacting with the [http://phillyfirenews.com](Philly Fire News website) to pull down fire incidents. [Read more here](stationdown/firenews/README.md)
