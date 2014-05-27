@@ -62,6 +62,6 @@ class ClosestStationFinder:
         return response.result
 
     # return the duration of the trip from fromPoint to toPoint in seconds
-    def getDuration( self, fromPoint, toPoint ):
-        result = self.getDirections( fromPoint.x, fromPoint.y, toPoint.x, toPoint.y )
+    def getDuration( self, startPoint, endPoint ):
+        result = self.getDirections( startPoint, endPoint )
         return result['Directions']['Duration']['seconds']
