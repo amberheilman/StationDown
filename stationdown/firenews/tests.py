@@ -38,9 +38,11 @@ class GeocoderTests(TestCase):
 
 		result = g.scrubAddress( testAddress )
 
-class FireIncidentDbTests(TestCase):
 
-	# we need to test that  the fire address gets filled because we initially
-	# fill the fireAddressStr and then clean it
-	def test_address(self):
-		incidents = FireIncident.objects.all()
+class FacilitiesTests(TestCase):
+
+	def test_retreival(self):
+
+		facilities = Facility.models.all()
+
+		self.assertTrue( len( facilities ) > 0 )

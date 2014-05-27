@@ -48,7 +48,11 @@ def fire_list(request):
 	incidents = FireIncident.objects.all()
 
 	t = get_template('list.html')
-	html = t.render(Context({"incidents":incidents,"test":"test"}))
+	html = t.render(Context(
+		{
+			"incidents":incidents,
+			"zoomLevel":"13"}
+	))
 	return HttpResponse(html)
 
 	

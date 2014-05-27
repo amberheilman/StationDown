@@ -8,7 +8,7 @@
     <th>Fire Date</th> 
     <th>Fire Type</th> 
     <th>Fire Address</th> 
-    <th>Fire Description</th>
+    <th class="fire_details">Fire Description</th>
 </tr> 
 </thead> 
 	<tbody>
@@ -19,9 +19,9 @@
 
 		<td>{{ incident.fireTypeStr|safe }}</td>
 
-		<td>{{ incident.fireAddressStr|safe }}</td>
+<td><a href="http://maps.google.com/maps?z={{ zoomLevel|safe }}&t=m&q=loc:{{ incident.y|safe }}+{{ incident.x|safe }}" target="_blank">{{ incident.fireAddressStr|safe }}</a></td>
 
-		<td>{{ incident.fireDetailsStr|safe }}</td>
+		<td class="fire_details">{{ incident.fireDetailsStr|safe }}</td>
 
 	</tr>
 {% endfor %}

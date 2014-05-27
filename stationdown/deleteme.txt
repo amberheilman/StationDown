@@ -11,4 +11,3 @@ LOCATION ( type: esriFieldTypeString , alias: LOCATION , length: 36 )
 RAD ( type: esriFieldTypeString , alias: RAD , length: 1 )
 ACTIVE ( type: esriFieldTypeString , alias: ACTIVE , length: 3 )
 SHAPE ( type: esriFieldTypeGeometry , alias: Shape )
-

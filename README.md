@@ -11,6 +11,7 @@ In the future, the trip of the responding station will be calculated and compare
 
 Brown out: "It is when you take an engine or ladder company out of service temporarily and re-distribute the staff for either training or to fill in personnel gaps in other companies." -http://www.phila.gov/fire/pdfs/Brown-Out_FAQ.pdf
 
+A list of Philadelphia fire incidents can be found [here](http://stationdown.herokuapp.com/fire-incidents/list)
 
 ### Scraping Fire Locations from Philly Fire News
 

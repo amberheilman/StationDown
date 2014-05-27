@@ -7,14 +7,4 @@ the command:
 
 python manage.py firenews --save
 
-will retreive the entries and store it in the Postgres database
-
-the command:
-
-python manage.py firenews --geocode
-
-will geocode those entries and create entries in a new table
-
-To initialize the databse, you run:
-
-python manage.py syncdb
+will retreive the entries, geocode and store it in the Postgres database

@@ -10,3 +10,8 @@ def fire_stations(request):
 	t = get_template('fire_stations.html')
 	html = t.render(Context())
 	return HttpResponse(html)
+
+def closest_station(request):
+    t = get_template('closest_station.html')
+    html = t.render(Context())
+    return HttpResponse(html)

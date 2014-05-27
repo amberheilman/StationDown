@@ -7,6 +7,7 @@ DATABASES = {
         'NAME': 'stationdown_dev',                      
         'USER': 'stationdown_dev',
         'PASSWORD': 'Password123',
-        'HOST': 'spruce.phl.io'
+        'HOST': 'spruce.phl.io',
+        'TEST_NAME': 'stationdown_auto_tests',
     }
 }

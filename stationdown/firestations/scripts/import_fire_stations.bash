@@ -18,14 +18,11 @@ then
   exit
 fi
 
+# overwrite the table and transform to latitude and longitude
 cmd='ogr2ogr -overwrite -t_srs EPSG:4326'
 
 dest="\"PostgreSQL\" PG:\"host=$PG_HOST user=$PG_USER dbname=$DB_NAME password=$STATIONDOWN_PG_PASS\""
 
-
-#cmd="ogr2ogr -f 'PostGreSQL' PG:'host=$PG_HOST user=$PG_USER dbname=DB_NAME password=$STATIONDOWN_PG_PASS' -nln fire_dept_facilities Philadelphia_Fire_Dept_Facilities201302.shp"
-
-#-nln $TABLENAME
 full="$cmd -f $dest -nln $TABLE_NAME $SHAPEFILE"
 
 echo $full
